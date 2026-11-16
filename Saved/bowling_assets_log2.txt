@@ -1,0 +1,4 @@
+/Game/BP_BowlingBallXR mesh=<Object '/Game/mesh/bolos/bowling_pin_ball.bowling_pin_ball' (0x000002BD721A7800) Class 'StaticMesh'>
+/Game/BP_BowlingBallXR compile=True saved=True
+/Game/BP_BowlingPinXR mesh=<Object '/Game/mesh/bolos/bowling.bowling' (0x000002BD721AA000) Class 'StaticMesh'>
+/Game/BP_BowlingPinXR compile=True saved=True

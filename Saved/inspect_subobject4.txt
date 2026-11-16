@@ -1,0 +1,15 @@
+H0 type=<class 'SubobjectDataHandle'> data=<class 'SubobjectData'>
+get_object=<Object '/Game/BP_BowlingBall.Default__BP_BowlingBall_C' (0x000002A3BFC65F00) Class 'BP_BowlingBall_C'>
+get_display_name=BP_BowlingBall
+get_class ERR TypeError("descriptor 'get_class' for '_ObjectBase' objects doesn't apply to a 'SubobjectData' object")
+is_component=False
+is_root_component=False
+is_default_scene_root=False
+H1 type=<class 'SubobjectDataHandle'> data=<class 'SubobjectData'>
+get_object=<Object '/Game/BP_BowlingBall.BP_BowlingBall_C:DefaultSceneRoot_GEN_VARIABLE' (0x000002A40A205400) Class 'SceneComponent'>
+get_display_name=DefaultSceneRoot_GEN_VARIABLE
+get_class ERR TypeError("descriptor 'get_class' for '_ObjectBase' objects doesn't apply to a 'SubobjectData' object")
+is_component=True
+is_root_component=True
+is_default_scene_root=True
+subdir=['acquire_editor_element_handle', 'add_new_subobject', 'attach_subobject', 'call_method', 'can_copy_subobjects', 'can_paste_subobjects', 'cast', 'change_subobject_class', 'copy_subobjects', 'create_new_bp_component', 'create_new_cpp_component', 'delete_subobject', 'delete_subobjects', 'detach_subobject', 'duplicate_subobjects', 'find_handle_for_object', 'get_class', 'get_default_object', 'get_editor_property', 'get_fname', 'get_full_name', 'get_name', 'get_outer', 'get_outermost', 'get_package', 'get_path_name', 'get_typed_outer', 'get_world', 'is_editor_property_overridden', 'is_package_external', 'is_valid_rename', 'k2_delete_subobject_from_instance', 'k2_delete_subobjects_from_instance', 'k2_find_subobject_data_from_handle', 'k2_gather_subobject_data_for_blueprint', 'k2_gather_subobject_data_for_instance', 'make_new_scene_root', 'modify', 'paste_subobjects', 'rename', 'rename_subobject', 'rename_subobject_member_variable', 'reparent_subobject', 'reparent_subobjects', 'reset_editor_property', 'set_editor_properties', 'set_editor_property', 'static_class']

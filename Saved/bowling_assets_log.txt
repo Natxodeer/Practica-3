@@ -1,0 +1,2 @@
+/Game/BP_BowlingBallXR ERROR Exception("StaticMeshComponent: Failed to find property 'simulate_physics' for attribute 'simulate_physics' on 'StaticMeshComponent'")
+/Game/BP_BowlingPinXR ERROR Exception("StaticMeshComponent: Failed to find property 'simulate_physics' for attribute 'simulate_physics' on 'StaticMeshComponent'")

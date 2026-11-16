@@ -1,0 +1,2 @@
+GEN <built-in method generated_class of Blueprint object at 0x000002A39FE010D0> type <class 'builtin_function_or_method_with_closure'>
+ERROR TypeError("NativizeClass: Cannot nativize 'builtin_function_or_method_with_closure' as 'Class' (allowed Class type: '<any>')\n  TypeError: NativizeObject: Cannot nativize 'builtin_function_or_method_with_closure' as 'Object' (allowed Class type: 'Class')")

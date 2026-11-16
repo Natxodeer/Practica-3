@@ -1,0 +1,10 @@
+SUBSYSTEM <Object '/Engine/Transient.UnrealEdEngine_0:SubobjectDataSubsystem_0' (0x000002A22D857EE0) Class 'SubobjectDataSubsystem'> DIR ['acquire_editor_element_handle', 'add_new_subobject', 'attach_subobject', 'can_copy_subobjects', 'can_paste_subobjects', 'change_subobject_class', 'copy_subobjects', 'delete_subobject', 'delete_subobjects', 'detach_subobject', 'duplicate_subobjects', 'find_handle_for_object', 'k2_delete_subobject_from_instance', 'k2_delete_subobjects_from_instance', 'k2_find_subobject_data_from_handle', 'k2_gather_subobject_data_for_blueprint', 'k2_gather_subobject_data_for_instance', 'paste_subobjects', 'rename_subobject', 'rename_subobject_member_variable', 'reparent_subobject', 'reparent_subobjects']
+HANDLES 4
+HANDLE <Struct 'SubobjectDataHandle' (0x000002A43A3AEDC0) {}> DATA <Struct 'SubobjectData' (0x000002A439B3B6A0) {}>
+DATA DIR ['assign', 'cast', 'copy', 'export_text', 'get_editor_property', 'import_text', 'set_editor_properties', 'set_editor_property', 'static_struct', 'to_dict', 'to_tuple']
+HANDLE <Struct 'SubobjectDataHandle' (0x000002A43A3AEA90) {}> DATA <Struct 'SubobjectData' (0x000002A439B36CC0) {}>
+DATA DIR ['assign', 'cast', 'copy', 'export_text', 'get_editor_property', 'import_text', 'set_editor_properties', 'set_editor_property', 'static_struct', 'to_dict', 'to_tuple']
+HANDLE <Struct 'SubobjectDataHandle' (0x000002A43A3AE400) {}> DATA <Struct 'SubobjectData' (0x000002A439B3AE60) {}>
+DATA DIR ['assign', 'cast', 'copy', 'export_text', 'get_editor_property', 'import_text', 'set_editor_properties', 'set_editor_property', 'static_struct', 'to_dict', 'to_tuple']
+HANDLE <Struct 'SubobjectDataHandle' (0x000002A43A3AC150) {}> DATA <Struct 'SubobjectData' (0x000002A439B39EA0) {}>
+DATA DIR ['assign', 'cast', 'copy', 'export_text', 'get_editor_property', 'import_text', 'set_editor_properties', 'set_editor_property', 'static_struct', 'to_dict', 'to_tuple']

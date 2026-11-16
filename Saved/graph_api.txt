@@ -1,0 +1,98 @@
+CLASS BlueprintGraphEditor Object oriented helper for editing graphs in a blueprint object
+Instantiate the UBlueprintGraphEditor via CreateAndEditFunctionGraph
+or GetGraphEditor. Static helpers can be found in BlueprintEditorLibrary
+and pin specific routines are encapsulated by BlueprintGraphPin
+
+Python Example:
+
+import unreal
+
+BlueprintGraphEditor = unreal.BlueprintGraphEditor
+
+print_string = "/Script/Engine.KismetSystemLibrary.PrintString"
+
+def GenHelloWorld(bp):
+    editor = BlueprintGraphEditor.create_and_edit_function_graph(bp, "HelloWorld")
+    start_pin = editor.find_graph_entry_pin()
+    start_pos = start_pin.get_owning_node().get_node_pos()
+    print_node = editor.add_call_function_node(print_string)
+    print_node.find_input_pin("InString").set_pin_value("Generated Script")
+    start_pin.try_create_connection(print_node.find_execute_pin())
+    print_node.set_node_pos(unreal.IntPoint(start_pos.x + 160, start_pos.y))
+
+**C++ Source:**
+
+- **Module**: BlueprintEditorLibrary
+- **File**: BlueprintGraphEditor.h
+
+DIR ['acquire_editor_element_handle', 'add_branch_node', 'add_call_function_node', 'add_comment_node', 'add_comment_to_nodes', 'add_component_bound_event_node', 'add_custom_event_node', 'add_dispatcher_event_node', 'add_get_local_variable_node', 'add_get_member_variable_node', 'add_graph_input_parameter', 'add_graph_output_parameter', 'add_local_variable', 'add_macro_node', 'add_member_variable', 'add_node_pin', 'add_return_node', 'add_set_local_variable_node', 'add_set_member_variable_node', 'call_method', 'cast', 'create_and_edit_function_graph', 'create_node_from_name', 'find_event_node', 'find_graph_entry_pin', 'get_class', 'get_default_object', 'get_editor_property', 'get_fname', 'get_full_name', 'get_graph', 'get_graph_editor', 'get_graph_editor_by_name', 'get_local_variable_default_value', 'get_local_variable_type', 'get_name', 'get_outer', 'get_outermost', 'get_package', 'get_path_name', 'get_typed_outer', 'get_world', 'is_editor_property_overridden', 'is_package_external', 'list_all_nodes', 'list_available_nodes', 'list_comment_nodes', 'list_component_events', 'list_local_variable_names', 'list_nodes_of_class', 'list_nodes_with_errors', 'list_nodes_with_notes', 'list_nodes_with_warnings', 'modify', 'remove_comment_node', 'remove_graph_input_parameter', 'remove_graph_output_parameter', 'remove_local_variable', 'remove_member_variable', 'remove_node_pin', 'remove_nodes', 'rename', 'reset_editor_property', 'retarget_node_class', 'set_deprecation_message_on_function', 'set_editor_properties', 'set_editor_property', 'set_function_is_private', 'set_function_is_protected', 'set_function_is_public', 'set_is_call_in_editor_function', 'set_is_const_function', 'set_is_deprecated_function', 'set_is_exec_function', 'set_is_pure_function', 'set_is_thread_safe_function', 'set_is_unsafe_during_actor_construction_function', 'set_local_variable_default_value', 'static_class']
+add_branch_node DOC x.add_branch_node() -> K2Node_IfThenElse
+Creates a UK2Node_IfThenElse in the current graph
+
+Returns:
+    K2Node_IfThenElse:
+add_call_function_node DOC x.add_call_function_node(function_path) -> K2Node_CallFunction
+Creates a UK2Node_CallFunction in the current graph invoking the function specified by FunctionPath
+
+Args:
+    function_path (str): 
+
+Returns:
+    K2Node_CallFunction:
+add_custom_event_node DOC x.add_custom_event_node(event_name) -> K2Node_CustomEvent
+Creates a UK2Node_CustomEvent node if the current graph is an event graph, using the provided EventName
+
+Args:
+    event_name (str): 
+
+Returns:
+    K2Node_CustomEvent:
+add_comment_node DOC x.add_comment_node(comment_text, location, size=[400.000000, 200.000000]) -> EdGraphNode_Comment
+Creates a comment node in the current graph at the given location with the given text and size.
+
+Args:
+    comment_text (str): 
+    location (Vector2D): 
+    size (Vector2D): 
+
+Returns:
+    EdGraphNode_Comment:
+add_get_member_variable_node DOC x.add_get_member_variable_node(member_name, class_path="") -> K2Node_VariableGet
+Creates a UK2Node_VariableGet for the member variable identified by MemberName
+by default this will use the current class, provided a ClassPath to work
+with a different class
+
+Args:
+    member_name (Name): 
+    class_path (str): 
+
+Returns:
+    K2Node_VariableGet:
+add_set_member_variable_node DOC x.add_set_member_variable_node(member_name, class_path="") -> K2Node_VariableSet
+Creates a UK2Node_VariableSet for the member variable identified by MemberName
+by default this will use the current class, provided a ClassPath to work
+with a different class
+
+Args:
+    member_name (Name): 
+    class_path (str): 
+
+Returns:
+    K2Node_VariableSet:
+CLASS BlueprintGraphPin A value type representing a blueprint graph pin (underlying native type: UEdGraphPin). Use IsValid()
+to detect whether it represents a real pin value (e.g. after finding a pin on a node).
+
+**C++ Source:**
+
+- **Module**: BlueprintEditorLibrary
+- **File**: BlueprintGraphPin.h
+
+DIR ['assign', 'break_pin_links', 'break_single_pin_link', 'can_create_connection', 'cast', 'copy', 'export_text', 'get_editor_property', 'get_owning_node', 'get_pin_direction', 'get_pin_name', 'get_pin_type', 'get_pin_type_as_json_schema', 'get_pin_type_display_string', 'get_pin_value', 'import_text', 'is_same_native_pin', 'is_valid', 'list_connected_pins', 'set_editor_properties', 'set_editor_property', 'set_pin_value', 'static_struct', 'to_dict', 'to_tuple', 'try_create_connection']
+CLASS BlueprintEditorLibrary Blueprint Editor Library
+
+**C++ Source:**
+
+- **Module**: BlueprintEditorLibrary
+- **File**: BlueprintEditorLibrary.h
+
+DIR ['acquire_editor_element_handle', 'add_event_dispatcher', 'add_event_dispatcher_parameter', 'add_event_override', 'add_function_graph', 'add_function_override', 'add_member_variable', 'call_method', 'cast', 'change_member_variable_type', 'compare_asset_save_version_to', 'compare_soft_object_save_version_to', 'compile_blueprint', 'create_blueprint_asset_with_parent', 'find_condition_pin', 'find_data_input_pin', 'find_else_pin', 'find_event_graph', 'find_execute_pin', 'find_graph', 'find_input_pin', 'find_input_pin_by_index', 'find_output_pin', 'find_output_pin_by_index', 'find_result_pin', 'find_self_pin', 'find_then_pin', 'generated_class', 'get_array_type', 'get_basic_type_by_name', 'get_blueprint_asset', 'get_blueprint_for_class', 'get_blueprint_parent_class', 'get_blueprint_variable_category', 'get_blueprint_variable_replication', 'get_class', 'get_class_reference_type', 'get_comment_color', 'get_comment_text', 'get_create_delegate_function', 'get_current_engine_version', 'get_default_object', 'get_editor_property', 'get_fname', 'get_full_name', 'get_map_type', 'get_member_variable_type', 'get_name', 'get_node_category', 'get_node_pos', 'get_node_size', 'get_node_title', 'get_nodes_in_comment', 'get_object_reference_type', 'get_outer', 'get_outermost', 'get_package', 'get_path_name', 'get_saved_by_engine_version', 'get_set_type', 'get_struct_type', 'get_typed_outer', 'get_world', 'is_editor_property_overridden', 'is_package_external', 'list_all_pins', 'list_compatible_functions_for_delegate', 'list_event_dispatchers', 'list_events', 'list_functions', 'list_graph_names', 'list_graphs', 'list_input_pins', 'list_member_variable_names', 'list_output_pins', 'modify', 'pin_type_to_json_schema', 'refresh_all_open_blueprint_editors', 'refresh_open_editors_for_blueprint', 'remove_event_dispatcher', 'remove_event_dispatcher_parameter', 'remove_function_graph', 'remove_graph', 'remove_unused_nodes', 'remove_unused_variables', 'rename', 'rename_graph', 'reparent_blueprint', 'replace_variable_references', 'reset_editor_property', 'set_blueprint_variable_category', 'set_blueprint_variable_expose_on_spawn', 'set_blueprint_variable_expose_to_cinematics', 'set_blueprint_variable_instance_editable', 'set_blueprint_variable_replication', 'set_comment_color', 'set_comment_text', 'set_create_delegate_function', 'set_editor_properties', 'set_editor_property', 'set_node_pos', 'static_class', 'upgrade_operator_nodes']

@@ -1,0 +1,2 @@
+GEN <Object '/Game/XRFramework/Blueprints/BP_Grabbable_SmallCube.BP_Grabbable_SmallCube_C' (0x000002A3A7C39A00) Class 'BlueprintGeneratedClass'> type <class 'BlueprintGeneratedClass'>
+CDO <Object '/Game/XRFramework/Blueprints/BP_Grabbable_SmallCube.Default__BP_Grabbable_SmallCube_C' (0x000002A3A7FE5500) Class 'BP_Grabbable_SmallCube_C'> class BP_Grabbable_SmallCube_C

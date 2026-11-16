@@ -1,0 +1,23 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Lista de cambios no controlados predeterminada",
+			"files": [
+				"C:/Users/nacho/Downloads/Practica3/Content/SalaMinijuegos.umap",
+				"C:/Users/nacho/Downloads/Practica3/Content/BP_BowlingBall.uasset",
+				"C:/Users/nacho/Downloads/Practica3/Content/BP_BowlingBallXR.uasset",
+				"C:/Users/nacho/Downloads/Practica3/Content/BP_BowlingPinXR.uasset",
+				"C:/Users/nacho/Downloads/Practica3/Content/BP_BowlinglolXR.uasset",
+				"C:/Users/nacho/Downloads/Practica3/Content/Bp_Hammer_xr.uasset",
+				"C:/Users/nacho/Downloads/Practica3/Content/Bp_Objdestruct_xr.uasset",
+				"C:/Users/nacho/Downloads/Practica3/Content/XRFramework/Levels/L_XRTemplate_BuiltData.uasset",
+				"C:/Users/nacho/Downloads/Practica3/Content/XRFramework/Levels/L_XRTemplate.umap",
+				"C:/Users/nacho/Downloads/Practica3/Content/BP_Diana_XR.uasset",
+				"C:/Users/nacho/Downloads/Practica3/Content/BP_Dardo_XR.uasset",
+				"C:/Users/nacho/Downloads/Practica3/Content/BP_CuerpoMrPotato_XR.uasset"
+			]
+		}
+	]
+}

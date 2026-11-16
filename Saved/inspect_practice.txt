@@ -1,0 +1,9 @@
+ASSET /Game/XRFramework/Blueprints/BP_Grabbable_SmallCube => Blueprint
+ASSET /Game/mesh/bolos/bowling => StaticMesh
+ASSET /Game/mesh/bolos/bowling_pin_ball => StaticMesh
+ASSET /Game/mesh/dardos/SM_DartboardDarts_Cylinder => StaticMesh
+ASSET /Game/mesh/dardos/SM_DartboardDarts_Cylinder_001 => StaticMesh
+ASSET /Game/mesh/Mr_Potato/Señor_potato_29_Cuerpo => StaticMesh
+ASSET /Game/mesh/Mr_Potato/Señor_potato_29_Gorra => StaticMesh
+ASSET /Game/mesh/pinata/pinata_mesh => StaticMesh
+BLUEPRINT INSPECT ERROR AttributeError("type object 'BlueprintEditorLibrary' has no attribute 'get_blueprint_generated_class'")

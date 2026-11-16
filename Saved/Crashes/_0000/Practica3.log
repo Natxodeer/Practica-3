@@ -1,0 +1,32 @@
+Failed to load 'aqProf.dll' (GetLastError=126)
+File 'aqProf.dll' does not exist
+Loading WinPixEventRuntime.dll for PIX profiling (from ../../../Engine/Binaries/ThirdParty/Windows/WinPixEventRuntime/x64).
+Failed to load 'VtuneApi.dll' (GetLastError=126)
+File 'VtuneApi.dll' does not exist
+Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+File 'VtuneApi32e.dll' does not exist
+Started CrashReportClient (pid=51048)
+Enabling Tpause support
+Custom abort handler registered for crash reporting.
+Running DelayedAutoRegister Phase StartOfEnginePreInit
+Running engine for game: Practica3
+UTS: Unreal Trace Server process returned an error (0x0000a005)
+Initializing trace...
+Requested channels: 'cpu,gpu,frame,log,bookmark,screenshot,region'
+No trace connection. Tracing to in-memory cache.
+Control listening on port 40794
+Finished trace initialization.
+Metadata set : platform="Windows"
+Metadata set : config="Development"
+Metadata set : buildversion="++UE5+Release-5.8-CL-58902052"
+Metadata set : engineversion="5.8.4-58902052+++UE5+Release-5.8"
+Metadata set : enginereleaseversion="5.8.4"
+Metadata set : os="Windows 11 (26H2) [10.0.26300.9818] "
+Metadata set : cpu="GenuineIntel|Intel(R) Core(TM) Ultra 7 255HX"
+Metadata set : pgoenabled="0"
+Metadata set : pgoprofilingenabled="0"
+Metadata set : ltoenabled="0"
+Metadata set : asan="0"
+Metadata set : mergedmodules="0"
+Metadata set : compacttset="0"
+Metadata set : commandline="" C:\Users\nacho\Downloads\Practica3\Practica3.uproject""

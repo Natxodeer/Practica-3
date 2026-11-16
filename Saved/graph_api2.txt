@@ -1,0 +1,35 @@
+get_graph_editor_by_name DOC X.get_graph_editor_by_name(blueprint, graph_name) -> BlueprintGraphEditor
+returns a new UBlueprintGraphEditor for a graph in InBlueprint named GraphName - useful for editing graphs that already exist
+
+Args:
+    blueprint (Blueprint): 
+    graph_name (Name): 
+
+Returns:
+    BlueprintGraphEditor:
+get_graph_editor DOC X.get_graph_editor(graph) -> BlueprintGraphEditor
+returns a new UBlueprintGraphEditor for the provided graph - useful for editing graphs that already exist
+
+Args:
+    graph (EdGraph): 
+
+Returns:
+    BlueprintGraphEditor:
+create_and_edit_function_graph DOC X.create_and_edit_function_graph(blueprint, func_name="NewFunction") -> BlueprintGraphEditor
+returns a new UBlueprintGraphEditor for a graph in InBlueprint, creating a new graph named FuncName - useful for creating new function graphs
+
+Args:
+    blueprint (Blueprint): 
+    func_name (str): 
+
+Returns:
+    BlueprintGraphEditor:
+BP /Game/BP_BowlingBall <Object '/Game/BP_BowlingBall.BP_BowlingBall' (0x000002A3DA4B2A00) Class 'Blueprint'> parent=<Object '/Script/Engine.Actor' (0x00007FF430112708) Class 'Class'>
+ 0 <Object '/Game/BP_BowlingBall.Default__BP_BowlingBall_C' (0x000002A3BFC65F00) Class 'BP_BowlingBall_C'> class=BP_BowlingBall_C
+ 1 <Object '/Game/BP_BowlingBall.BP_BowlingBall_C:DefaultSceneRoot_GEN_VARIABLE' (0x000002A40A205400) Class 'SceneComponent'> class=SceneComponent
+BP /Game/XRFramework/Blueprints/BP_Grabbable_SmallCube <Object '/Game/XRFramework/Blueprints/BP_Grabbable_SmallCube.BP_Grabbable_SmallCube' (0x000002A3A825F000) Class 'Blueprint'> parent=<Object '/Script/Engine.Actor' (0x00007FF430112708) Class 'Class'>
+ 0 <Object '/Game/XRFramework/Blueprints/BP_Grabbable_SmallCube.Default__BP_Grabbable_SmallCube_C' (0x000002A3A7FE5500) Class 'BP_Grabbable_SmallCube_C'> class=BP_Grabbable_SmallCube_C
+ 1 <Object '/Game/XRFramework/Blueprints/BP_Grabbable_SmallCube.BP_Grabbable_SmallCube_C:StaticMesh_GEN_VARIABLE' (0x000002A3A8297800) Class 'StaticMeshComponent'> class=StaticMeshComponent
+  mesh=<Object '/Game/LevelPrototyping/Meshes/SM_ChamferCube.SM_ChamferCube' (0x000002A3B6F8C000) Class 'StaticMesh'>
+ 2 <Object '/Game/XRFramework/Blueprints/BP_Grabbable_SmallCube.BP_Grabbable_SmallCube_C:GrabComponent_GEN_VARIABLE' (0x000002A3A8213B80) Class 'BP_GrabComponent_C'> class=BP_GrabComponent_C
+ 3 <Object '/Game/XRFramework/Blueprints/BP_Grabbable_SmallCube.BP_Grabbable_SmallCube_C:GrabComponent_GEN_VARIABLE' (0x000002A3A8213B80) Class 'BP_GrabComponent_C'> class=BP_GrabComponent_C
